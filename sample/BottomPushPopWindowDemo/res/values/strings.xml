@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ButtomPushPopWindowDemo</string>
+    <string name="action_email">"发送邮件"</string>
+    <string name="action_phone">"拨打电话"</string>
+</resources>
