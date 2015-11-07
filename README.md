@@ -6,7 +6,7 @@
 在弹出自定义的PopupWindow时，增加一个半透明蒙层view到窗口，并置于PopupWindow下方。
 
 #Demo
-<a herf="https://raw.githubusercontent.com/yzeaho/BottomPushPopWindow/master/ButtomPushPopWindowDemo.apk">BottomPushPopWindowDemo.apk</a>
+<a href="https://raw.githubusercontent.com/yzeaho/BottomPushPopWindow/master/ButtomPushPopWindowDemo.apk">BottomPushPopWindowDemo.apk</a>
 
 #How to Use
 继承BottomPushPopupWindow，编写generateCustomView添加自定义的view，调用showAtLocation方法显示。
