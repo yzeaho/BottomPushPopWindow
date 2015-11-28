@@ -8,6 +8,7 @@
 
 #Demo
 <a href="https://raw.githubusercontent.com/yzeaho/BottomPushPopWindow/master/ButtomPushPopWindowDemo.apk">BottomPushPopWindowDemo.apk</a>
+<br>
 <img src="https://raw.githubusercontent.com/yzeaho/BottomPushPopWindow/master/1448714621.gif">
 
 #How to Use
