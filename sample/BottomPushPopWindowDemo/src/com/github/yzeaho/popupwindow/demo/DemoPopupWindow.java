@@ -1,10 +1,10 @@
-package com.yy.c.pw.demo;
+package com.github.yzeaho.popupwindow.demo;
+
+import com.github.yzeaho.popupwindow.BottomPushPopupWindow;
 
 import android.content.Context;
 import android.view.View;
 import android.widget.Toast;
-
-import com.yy.c.pw.BottomPushPopupWindow;
 
 /**
  * BottomPushPopupWindow的简单例子

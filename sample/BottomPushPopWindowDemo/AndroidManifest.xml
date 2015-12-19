@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.yy.c.pw.demo"
+    package="com.github.yzeaho.popupwindow.demo"
     android:versionCode="1"
     android:versionName="1.0" >
     <uses-sdk

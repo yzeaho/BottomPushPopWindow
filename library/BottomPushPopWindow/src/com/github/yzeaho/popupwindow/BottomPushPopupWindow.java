@@ -1,9 +1,11 @@
-package com.yy.c.pw;
+package com.github.yzeaho.popupwindow;
 
 import android.annotation.TargetApi;
+import android.app.Activity;
 import android.content.Context;
 import android.graphics.PixelFormat;
 import android.os.IBinder;
+import android.view.Gravity;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.View.OnKeyListener;
@@ -19,7 +21,7 @@ import android.widget.PopupWindow;
  * </p>
  * <p>
  * 使用方法：<br>
- * 继承BottomPushPopupWindow，编写generateCustomView添加自定义的view，调用showAtLocation方法显示。
+ * 继承BottomPushPopupWindow，编写generateCustomView添加自定义的view，调用show方法显示。
  * </p>
  * 
  * @author y
@@ -49,7 +51,7 @@ public abstract class BottomPushPopupWindow extends PopupWindow {
 
     @TargetApi(23)
     private void initType() {
-        // 解决华为手机在home建进入后台后，在进入应用，蒙层出现在opupWindow上层的bug。
+        // 解决华为手机在home建进入后台后，在进入应用，蒙层出现在popupWindow上层的bug。
         // android4.0及以上版本都有这个hide方法，根据jvm原理，可以直接调用，选择android6.0版本进行编译即可。
         setWindowLayoutType(WindowManager.LayoutParams.TYPE_APPLICATION_SUB_PANEL);
     }
@@ -70,6 +72,13 @@ public abstract class BottomPushPopupWindow extends PopupWindow {
     public void dismiss() {
         removeMaskView();
         super.dismiss();
+    }
+
+    /**
+     * 显示在界面的底部
+     */
+    public void show(Activity activity) {
+        showAtLocation(activity.getWindow().getDecorView(), Gravity.BOTTOM | Gravity.CENTER_HORIZONTAL, 0, 0);
     }
 
     private void addMaskView(IBinder token) {

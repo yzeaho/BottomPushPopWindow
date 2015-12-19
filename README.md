@@ -12,4 +12,4 @@
 <img src="https://raw.githubusercontent.com/yzeaho/BottomPushPopWindow/master/1448714621.gif">
 
 #How to Use
-继承BottomPushPopupWindow，编写generateCustomView添加自定义的view，调用showAtLocation方法显示。
+继承BottomPushPopupWindow，编写generateCustomView添加自定义的view，调用show方法显示。
