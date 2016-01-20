@@ -26,19 +26,19 @@ import android.widget.PopupWindow;
  * 
  * @author y
  */
-public abstract class BottomPushPopupWindow extends PopupWindow {
+public abstract class BottomPushPopupWindow<T> extends PopupWindow {
 
     protected Context context;
     private WindowManager wm;
     private View maskView;
 
     @SuppressWarnings("deprecation")
-    public BottomPushPopupWindow(Context context) {
+    public BottomPushPopupWindow(Context context, T t) {
         super(context);
         this.context = context;
         wm = (WindowManager) context.getSystemService(Context.WINDOW_SERVICE);
         initType();
-        setContentView(generateCustomView());
+        setContentView(generateCustomView(t));
         setWidth(ViewGroup.LayoutParams.MATCH_PARENT);
         setHeight(ViewGroup.LayoutParams.WRAP_CONTENT);
         setOutsideTouchable(true);
@@ -47,7 +47,7 @@ public abstract class BottomPushPopupWindow extends PopupWindow {
         setAnimationStyle(R.style.Animations_BottomPush);
     }
 
-    protected abstract View generateCustomView();
+    protected abstract View generateCustomView(T t);
 
     @TargetApi(23)
     private void initType() {

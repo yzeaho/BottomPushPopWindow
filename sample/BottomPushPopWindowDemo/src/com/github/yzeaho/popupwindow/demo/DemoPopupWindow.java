@@ -11,14 +11,14 @@ import android.widget.Toast;
  * 
  * @author y
  */
-public class DemoPopupWindow extends BottomPushPopupWindow {
+public class DemoPopupWindow extends BottomPushPopupWindow<Void> {
 
     public DemoPopupWindow(Context context) {
-        super(context);
+        super(context, null);
     }
 
     @Override
-    protected View generateCustomView() {
+    protected View generateCustomView(Void data) {
         View root = View.inflate(context, R.layout.popup_demo, null);
         View emailView = root.findViewById(R.id.email);
         emailView.setOnClickListener(new View.OnClickListener() {
