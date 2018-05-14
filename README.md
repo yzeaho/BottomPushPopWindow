@@ -1,4 +1,6 @@
-# BottomPushPopWindow
+#google推出了这种类似的控件，请使用google的BottomSheetDialogFragment
+
+#BottomPushPopWindow
 很多应用的这个功能体验都不太好，贡献给大家一个，自己弄圆角图片，或按照UI的切图进行贴图。<br>
 从下方弹出的PopupWindow，仿iphone效果，增加半透明蒙层动画。<br>
 支持android4.0及以上版本。
